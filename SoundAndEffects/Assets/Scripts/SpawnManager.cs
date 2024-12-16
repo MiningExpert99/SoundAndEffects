@@ -15,9 +15,6 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnObstacle()
     {
-        if (playerControllerScript.gameOver == false)
-        {
-            Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
-        }
-    }
+        if (playerControllerScript.gameOver == false){
+            _ = Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation); } }
 }
